@@ -89,8 +89,8 @@ flowchart LR
 ## Quick start
 
 ```bash
-git clone https://github.com/vineethasusan/fleet-predictive-maintenance.git
-cd fleet-predictive-maintenance
+git clone https://github.com/vineethasusan/Predictive-Maintenance-with-MLOps.git
+cd Predictive-Maintenance-with-MLOps
 python -m venv .venv && source .venv/bin/activate
 make install
 make data        # 146k vehicle-days of telemetry
@@ -150,7 +150,7 @@ curl -X POST localhost:8000/predict -H "Content-Type: application/json" -d @samp
 ## Project structure
 
 ```
-fleet-predictive-maintenance/
+Predictive-Maintenance-with-MLOps/
 ├── src/fleetpm/
 │   ├── data.py          # synthetic telemetry generator
 │   ├── features.py      # features, labels, time split
