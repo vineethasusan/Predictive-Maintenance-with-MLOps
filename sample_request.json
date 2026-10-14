@@ -1,0 +1,71 @@
+{
+ "vehicles": [
+  {
+   "vehicle_id": "DXB-1042",
+   "features": {
+    "age_years": 10.0,
+    "km_since_service": 3574.0,
+    "days_since_service": 27.0,
+    "vehicle_type_code": 0.0,
+    "coolant_temp_avg_7d": 91.2,
+    "coolant_temp_max_7d": 98.686,
+    "oil_pressure_psi_7d": 37.014,
+    "battery_voltage_7d": 13.674,
+    "dtc_count_7d": 0.286,
+    "km_7d": 144.757,
+    "engine_hours_7d": 4.761,
+    "idle_hours_7d": 0.559,
+    "harsh_events_7d": 3.143,
+    "coolant_temp_avg_30d": 90.647,
+    "coolant_temp_max_30d": 96.797,
+    "oil_pressure_psi_30d": 39.503,
+    "battery_voltage_30d": 13.751,
+    "dtc_count_30d": 0.2,
+    "km_30d": 134.133,
+    "engine_hours_30d": 4.434,
+    "idle_hours_30d": 0.523,
+    "harsh_events_30d": 3.067,
+    "coolant_trend": 0.553,
+    "oil_trend": -2.489,
+    "battery_trend": -0.076,
+    "dtc_7d_sum": 2.0,
+    "km_since_service_ratio": 0.477,
+    "failures_last_180d": 0.0
+   }
+  },
+  {
+   "vehicle_id": "SHJ-2210",
+   "features": {
+    "age_years": 0.0,
+    "km_since_service": 420.0,
+    "days_since_service": 4.0,
+    "vehicle_type_code": 1.0,
+    "coolant_temp_avg_7d": 88.714,
+    "coolant_temp_max_7d": 92.857,
+    "oil_pressure_psi_7d": 44.3,
+    "battery_voltage_7d": 13.879,
+    "dtc_count_7d": 0.0,
+    "km_7d": 99.686,
+    "engine_hours_7d": 3.543,
+    "idle_hours_7d": 0.514,
+    "harsh_events_7d": 0.714,
+    "coolant_temp_avg_30d": 88.53,
+    "coolant_temp_max_30d": 93.92,
+    "oil_pressure_psi_30d": 41.147,
+    "battery_voltage_30d": 13.854,
+    "dtc_count_30d": 0.033,
+    "km_30d": 106.507,
+    "engine_hours_30d": 3.849,
+    "idle_hours_30d": 0.59,
+    "harsh_events_30d": 0.9,
+    "coolant_trend": 0.184,
+    "oil_trend": 3.153,
+    "battery_trend": 0.024,
+    "dtc_7d_sum": 0.0,
+    "km_since_service_ratio": 0.042,
+    "failures_last_180d": 0.0
+   }
+  }
+ ],
+ "explain": true
+}
