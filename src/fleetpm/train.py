@@ -114,7 +114,11 @@ def train(data_path: str, out_dir: str = "artifacts", experiment: str = "fleet-p
                                    "cutoff": str(cutoff.date()), "n_features": len(FEATURES)})
                 mlflow.log_metrics({k: float(v) for k, v in metrics.items()})
                 mlflow.log_metrics({"val_savings_aed": val_policy.net_savings_aed, "val_pr_auc": val_pr_auc})
-                mlflow.sklearn.log_model(model, "model")
+                try:
+                    # cloudpickle: newer MLflow defaults to skops, which rejects gradient-boosting trees
+                    mlflow.sklearn.log_model(model, "model", serialization_format="cloudpickle")
+                except Exception as e:  # model logging must never block training; joblib copy is saved below
+                    print(f"MLflow model logging skipped: {e}")
         finally:
             if run:
                 mlflow.end_run()
